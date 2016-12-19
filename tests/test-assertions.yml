@@ -22,5 +22,5 @@
 
     - assert:
         that:
-          - "chrony_conf_contents.rc == 0"
+          - "openldap_conf_contents.rc == 0"
           - "ldapsearch_exists.rc == 0"
