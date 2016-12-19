@@ -46,10 +46,9 @@ Including an example of how to use your role (for instance, with variables passe
 
 License
 -------
-
 GPL2
 
 Author Information
 ------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+* [Barry Britt (bbritt@iastate.edu)](bbritt@iastate.edu)
+* [John Dickerson (jedicker@iastate.edu)](jedicker@iastate.edu)

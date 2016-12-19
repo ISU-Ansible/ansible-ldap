@@ -12,7 +12,7 @@
       register: openldap_conf
 
     - name: "[Test] Test File Defaults"
-      shell: "grep 'URI.*ldap://ldap1.example.com ldap://ldap2.example.com" {{openldap_configuration_file}}"
+      shell: "grep 'URI.*ldap://ldap1.example.com ldap://ldap2.example.com' {{openldap_configuration_file}}"
       when: openldap_conf.stat.exists == True
       register: openldap_conf_contents
 
