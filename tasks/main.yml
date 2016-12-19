@@ -1,0 +1,21 @@
+---
+- include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_distribution }}.{{ ansible_distribution_major_version }}.yml"
+    - "{{ ansible_distribution }}.yml"
+    - "default.yml"
+
+- name: "OpenLDAP Installation"
+  package:
+    name: "{{ item }}"
+    state: installed
+  with_items:
+    - "{{openldap_packages}}"
+
+- name: "OpenLDAP Configuration"
+  template:
+    src: ldap.conf.j2
+    dest: "{{openldap_configuration_file}}"
+    owner: root
+    group: root
+    mode: 0644

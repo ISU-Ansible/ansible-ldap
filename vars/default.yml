@@ -1,0 +1,6 @@
+---
+openldap_configuration_file: /etc/openldap/ldap.conf
+
+openldap_packages:
+  - openldap-clients
+  - cyrus-sasl
