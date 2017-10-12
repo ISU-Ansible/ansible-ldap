@@ -4,12 +4,5 @@
 # openldap_configuration_file
 # openlap_packages
 
-openldap_conf:
-  ldap_version: "3"
-  URI: "ldap://ldap1.example.com ldap://ldap2.example.com"
-  BASE: "dc=example,dc=com"
-  scope: "sub"
-  HOST: "ldap1.example.com ldap2.example.com"
-  SASL_MECH: "GSSAPI"
-  SASL_REALM: "EXAMPLE.COM"
-  REFERRALS: "no"
+openldap_os_supported: false
+openldap: {}

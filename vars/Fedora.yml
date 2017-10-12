@@ -1,6 +1,8 @@
 ---
 openldap_configuration_file: /etc/openldap/ldap.conf
 
+openldap_os_supported: true
+
 openldap_packages:
   - openldap
   - openldap-clients
