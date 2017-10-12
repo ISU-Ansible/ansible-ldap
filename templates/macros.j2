@@ -7,7 +7,7 @@
 {%   elif openldap_defaults[key] is defined and openldap_skip_defaults != true %}
 {%     set value = openldap_defaults[key] %}
 {%   endif %}
-{{ render_option(key,value,indent,comma) -}}
+{{ render_option(key,value,comma) -}}
 {%- endmacro %}
 
 {#- Render Options Jinja Template #}
