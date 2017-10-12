@@ -5,4 +5,6 @@
 # openlap_packages
 
 openldap_os_supported: false
+openldap_skip_defaults: false
+
 openldap: {}
